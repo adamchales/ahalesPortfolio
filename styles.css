@@ -259,44 +259,11 @@ footer{
     }
 }
 
-@media only screen and (max-width: 500px),
-            screen and (min-height: 750px) {
+
+
+@media only screen and (min-width: 900px){
     section{
-        height: 65vh;
-    }
-    .name{
-        transform: scale(1.5);
-    }
-
-    .contactInfo{
-        font-size:2rem;
-    }
-    .subtitle{
-        font-size: 1.5rem;
-    }
-
-    .pageTitle{
-        font-size: 2rem;
-    }
-
-    .resumeButton{
-        transform: scale(1.25);
-        padding-top: 5px;
-    }
-
-    .resumeButton:hover{
-        transform: scale(1.4);
-    }
-    .footerMenu{
-        font-size: x-small;
-    }
-}
-
-
-
-@media only screen and (min-width: 750px){
-    section{
-        height: 80vh;
+        height: 60vh;
     }
 
     .mePic{
