@@ -1,0 +1,251 @@
+:root{
+    --color-main: #1d3557;
+    --color-text: #f1faee;
+    --color-secondary:#457b9d;
+    --color-light: #a8dadc;
+    --color-emphatic: #e4535f;
+    --box-shadow: 0 3px 15px rgba(0,0,0,.2);
+}
+*{
+    background-color: var(--color-main);
+    color: var(--color-text);
+    transition: all .4s ease-in-out;
+}
+
+.load{
+    animation: 1.5s slideIn;
+}
+
+@keyframes slideIn{
+    from { transform: translateY(80%); opacity: 0;}
+    to { transform: translateY(0); opacity: 1;}
+}
+
+.scroll{
+    position: relative;
+    transform: translateY(150px);
+    opacity: 0;
+}
+
+.scroll.active{
+    transform: translateY(0px);
+    opacity: 1;
+    transition: 1.5s;
+}
+
+
+
+section{
+    height: 100vh;
+    font-family: 'Nanum Gothic', sans-serif;
+}
+
+span{
+    background-color: var(--color-secondary);
+}
+
+
+.mePic{
+    max-width: 150px;
+    max-height: auto;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 25px;
+
+}
+.name{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 5%;
+    color: var(--color-emphatic);
+    font-weight: 1;
+}
+
+
+.subtitle{
+    display: flex;
+    justify-content: center;
+    font-weight: 1;
+}
+
+.contactInfo{
+    display: flex;
+    justify-content: center;
+    font-size: 1.5rem;
+}
+
+.contactIcon:hover{
+    transform: scale(1.25);
+    color: var(--color-emphatic)
+}
+
+.resumeButton{
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+.mainBtn{
+    border-radius: 30px;
+    color: inherit;
+    font-weight: 600;
+    position: relative;
+    border: 1px solid var(--color-secondary);
+    display: flex;
+    align-self: flex-start;
+    align-items: center;
+    overflow: hidden;
+    background-color: var(--color-secondary);
+}
+
+
+.btnText{
+    padding: 0 1rem;
+}
+
+.btnIcon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--color-secondary);
+}
+
+.resumeButton:hover{
+    transform: scale(1.15);
+}
+
+.resumeButton .btnIcon:hover{
+    color: var(--color-emphatic)
+}
+
+
+.pageTitle{
+    display: flex;
+    justify-content: center;
+    color: var(--color-emphatic);
+    font-weight: 1;
+}
+
+.aboutText{
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
+}
+
+.skills{
+    display: flex;
+    justify-content: center;
+    font-size: 2rem;
+}
+
+.aboutIcon{
+    color: var(--color-light);
+}
+
+.aboutIcon:hover{
+    transform: scale(1.25);
+    color: var(--color-text);
+}
+
+iframe{
+    display: flex;
+    max-width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.projectImage{
+    max-width: 75%;
+    height: auto;
+    padding: 5px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px;
+}
+
+.projectImage:hover{
+    transform: scale(1.05);
+}
+
+.projectLinks{
+    display: flex;
+    justify-content: center;
+    font-size: 2rem;
+    padding-bottom: 2rem;
+}
+
+footer{
+    display: flex;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: rgb(56, 56, 56);
+    color: var(--color-text);
+}
+.footerMenu{
+    background-color:rgb(56, 56, 56);
+    font-size: 1rem;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: right;
+}
+
+.footerName{
+    background-color:rgb(56, 56, 56);
+    display: flex;
+    align-items: left;
+    margin-right: 60%;
+}
+
+.footerLink{
+    text-decoration: none;
+    color: var(--color-text);
+}
+
+.footerLink:hover{
+    color: var(--color-light);
+}
+
+@media only screen and (max-width: 500px){
+    section{
+        height: 80vh;
+    }
+    .footerMenu{
+        font-size: x-small;
+    }
+}
+
+@media only screen and (max-width: 500px){
+    @media only screen and (min-height: 700px){
+    section{
+        height: 60vh;
+    }
+    .footerMenu{
+        font-size: x-small;
+    }
+}
+}
+
+@media only screen and (min-width: 1000px){
+    .mePic{
+        max-width: 250px;
+        max-height: auto;
+    }
+    .name{
+        transform: scale(1.25);
+        padding-top: 0;
+    }
+    .aboutText{
+        margin-left: 15%;
+        margin-right: 15%;
+    }
+    iframe{
+        max-width: 60%
+    }
+    .projectImage{
+        max-width: 50%;
+    }
+}
