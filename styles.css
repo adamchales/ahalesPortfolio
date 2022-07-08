@@ -16,6 +16,14 @@
     animation: 1.5s slideIn;
 }
 
+.Me{
+    margin-top: 0;
+}
+
+hr{
+    margin-top: 0;
+}
+
 @keyframes slideIn{
     from { transform: translateY(80%); opacity: 0;}
     to { transform: translateY(0); opacity: 1;}
@@ -218,13 +226,12 @@ footer{
     }
 }
 
-@media only screen and (max-width: 500px),
-    screen and (min-height: 700px){
-    section{
-        height: 60vh;
+@media only screen and (max-height: 700px){
+    iframe{
+        display: none;
     }
-    .footerMenu{
-        font-size: x-small;
+    .music{
+        display: none;
     }
 }
 
