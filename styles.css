@@ -1,5 +1,5 @@
 :root{
-    --color-main: #1d3557;
+    --color-main: #2c548d;
     --color-text: #f1faee;
     --color-secondary:#457b9d;
     --color-light: #a8dadc;
@@ -227,9 +227,9 @@ footer{
 }
 
 @media only screen and (max-width: 500px),
-            screen and (min-height: 700px) {
+            screen and (min-height: 650px) {
     section{
-        height: 60vh;
+        height: 80vh;
     }
     .name{
         transform: scale(1.5);
